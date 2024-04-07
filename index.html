@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Guess the number</h1>
+      <p for="number">Type in a number between 0 and 100</p>
+
+      <input type="number" name="number" id="number" autofocus />
+
+      <p id="message"></p>
+      <div class="align-start">
+        <span class="muted font-medium">Attempts:</span>
+        <span id="attempts">10</span>
+      </div>
+      <div class="align-start">
+        <span class="muted font-medium">Guesses:</span>
+        <span id="numbers-guessed"></span>
+      </div>
+
+      <button class="hidden" id="restart">Restart</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
